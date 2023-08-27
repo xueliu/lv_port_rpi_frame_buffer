@@ -21,22 +21,9 @@ target_sources(
         PRIVATE
         main.c
         mouse_cursor_icon.c
-)
 
-target_include_directories(
-        ${PROJECT_NAME}
-        PRIVATE
-#        ${LV_CONF_PATH}
-        $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>
-)
-
-target_compile_definitions(
-        ${PROJECT_NAME}
-        PRIVATE
- #       ${LV_CONF_PATH}
-#        LV_CONF_H
- #       LV_CONF_INCLUDE_SIMPLE
- #       LV_LVGL_H_INCLUDE_SIMPLE
+        ./lv_conf.h
+        ./lv_drv_conf.h
 )
 
 target_link_libraries(
