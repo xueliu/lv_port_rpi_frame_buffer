@@ -54,3 +54,5 @@ dkms.conf
 
 *build*/
 .vs/
+
+visual_gdb/
